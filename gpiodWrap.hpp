@@ -32,7 +32,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://gnu.org>.
  * 
- * Raspino (TM) is a trademark of the Raspino-Project.
+ * Raspino (TM) is a trademark of the Raspino-Project and belongs to the community.
  * https://github.com/raspino-org
  */
 
