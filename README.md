@@ -228,6 +228,21 @@ sudo make install
 sudo ldconfig
 
 ```
+
+No Root Required
+
+```
+
+//Check the gpio group
+  groups 
+
+//if it doesn't show up, keep going (don't forget the 'a').
+  sudo usermod -aG gpio username
+
+//Sign up again
+  exit
+
+```
 ---
 
 
