@@ -368,7 +368,7 @@ output bin/...
 mkdir myproject
 cd myproject
 mkdir src include build
-mv ../gpioWarp/gpiodWrap.hpp include
+mv ../gpioWrap/gpiodWrap.hpp include
 nano CMakeLists.txt
 cd build
 cmake ..
