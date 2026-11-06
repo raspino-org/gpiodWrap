@@ -5,7 +5,7 @@
 
 A lightweight and user-friendly C++ wrapper for **libgpiod 2.x**, designed to make GPIO access on Linux and Raspberry Pi simple, readable, and intuitive.
   
-  
+#### Now also available for libgpiod-V1 (v1.6.x) <a href="https://github.com/raspino-org/gpiodWrapV1">gpioWrapV1</a>
 ---
 
 ## ✨ Features
