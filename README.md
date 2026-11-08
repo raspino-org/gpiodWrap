@@ -204,33 +204,25 @@ Perfect for hobbyists, students, and projects where you just want GPIO control w
 | C++         | ≥ C++17 |
 | CMake       | optional for building |
 
-Install libgpiod build-essential cmake(Debian / Raspberry Pi OS):
+Install libgpiod-dev build-essential cmake:
 
 ```bash
 sudo apt update
 sudo apt install -y libgpiod-dev build-essential cmake
 
-gpioinfo -v
 ```
 
-libgpiod-2.x self build e.g. RaspberryOS bullseye/bookworm
-```
-sudo apt update
-sudo apt install -y build-essential autoconf automake libtool pkg-config autoconf-archive
+## System Requirements for V2
 
-wget https://mirrors.edge.kernel.org/pub/software/libs/libgpiod/libgpiod-2.3.1.tar.gz
-tar -xvf libgpiod-2.3.1.tar.gz
-cd libgpiod-2.3.1
+gpiodWrap (V2) relies heavily on the modern Linux GPIO UAPI v2.
 
-./configure --enable-tools
-make -j4
-sudo make install
-sudo ldconfig
+- **Supported OS:** Debian 12 (Bookworm) or newer / Raspberry Pi OS (Bookworm) or newer.
+- **Minimum Linux Kernel:** 5.10+ (Check with `uname -r`)
+- **Hardware:** Optimised for Raspberry Pi 5 (RP1), compatible with Pi 3/4.
 
-```
+*Note: For older systems (Debian Buster/Bullseye) or older hardware (Pi 1/2 with legacy OS), please use <a href="https://github.com/raspino-org/gpiodWrapV1">**gpioWrapV1**</a>*
 
-No Root Required
-
+## No Root Required
 ```
 
 //Check the gpio group
